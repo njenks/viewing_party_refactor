@@ -1,9 +1,15 @@
 import pytest
+from viewing_party.movie import Movie 
 
-def test_1():
+def test_create_person():
     # Arrange
+    title = "shrek 2"
+    genre = "comedy"
+    rating = 4
+    host = "netflix"
 
     # Act
+    movie = Movie(title, genre, rating, host)
 
     # Assert
-    pass
+    assert movie.title == title 
